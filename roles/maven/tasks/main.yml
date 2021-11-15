@@ -1,0 +1,10 @@
+---
+
+- name: install maven
+  include_tasks: install-maven.yml
+  when: action == "install"
+
+- name: uninstall maven
+  include_tasks: uninstall-maven.yml
+  when: action == "uninstall"
+

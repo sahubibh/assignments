@@ -1,0 +1,10 @@
+---
+- name: remove maven symlink
+  file:
+    path: /usr/bin/mvn
+    state: absent
+- name: remove maven
+  file:
+    path: /opt/apache-maven-3.8.3
+    state: absent
+
